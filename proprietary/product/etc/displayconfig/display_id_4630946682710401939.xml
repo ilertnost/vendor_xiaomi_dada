@@ -8,46 +8,6 @@
             <nits>2.0</nits>
         </point>
         <point>
-            <value>0.03</value>
-            <nits>50.0</nits>
-        </point>
-        <point>
-            <value>0.06</value>
-            <nits>100.0</nits>
-        </point>
-        <point>
-            <value>0.12</value>
-            <nits>200.0</nits>
-        </point>
-        <point>
-            <value>0.22</value>
-            <nits>400.0</nits>
-        </point>
-        <point>
-            <value>0.32</value>
-            <nits>600.0</nits>
-        </point>
-        <point>
-            <value>0.42</value>
-            <nits>800.0</nits>
-        </point>
-        <point>
-            <value>0.50</value>
-            <nits>1000.0</nits>
-        </point>
-        <point>
-            <value>0.57</value>
-            <nits>1200.0</nits>
-        </point>
-        <point>
-            <value>0.64</value>
-            <nits>1400.0</nits>
-        </point>
-        <point>
-            <value>0.70</value>
-            <nits>1600.0</nits>
-        </point>
-        <point>
             <value>0.749847393</value>
             <nits>1800.0</nits>
         </point>

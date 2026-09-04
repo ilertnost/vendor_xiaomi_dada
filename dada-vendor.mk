@@ -192,6 +192,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/cameraopt.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt.json \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/cameraopt_perf.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt_perf.json \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/camerascene.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerascene.json \
+    vendor/xiaomi/dada/proprietary/odm/etc/camera/cameraopt_reclaim.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt_reclaim.json \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/camxoverridesettings.txt \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/colorsensorfactor.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/colorsensorfactor.xml \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/com.xiaomi.dcal.w_01.t_01.golden:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.w_01.t_01.golden \
@@ -1175,6 +1176,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/miuicamerayuv2heic.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/miuicamerayuv2heic.json \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/miuicamerayuv2jpeg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/miuicamerayuv2jpeg.json \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/miviphotographerconfig.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/miviphotographerconfig.json \
+    vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/miviprocesstimethreshold.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/miviprocesstimethreshold.json \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/mivisettings.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/mivisettings.json \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/mivistreamformat.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/mivistreamformat.json \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/mivivendorstreamconfig.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/mivivendorstreamconfig.json \

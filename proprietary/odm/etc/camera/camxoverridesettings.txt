@@ -3,7 +3,7 @@
 multiCameraLogicalXMLFile=dada.xml
 enableNCSService=TRUE
 enableNCSQSEE2=TRUE
-enableAONUsecase=TRUE
+enableAONUsecase=FALSE
 isActuatorNCSServiceEnable=TRUE
 
 #early init wide module
