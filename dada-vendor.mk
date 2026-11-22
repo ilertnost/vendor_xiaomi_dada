@@ -1793,9 +1793,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/vendor/etc/hal_uuid_map_dada.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_dada.xml \
     vendor/xiaomi/dada/proprietary/vendor/etc/init/hw/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
     vendor/xiaomi/dada/proprietary/vendor/etc/init/hw/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mi_thermald.rc \
+    vendor/xiaomi/dada/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc \
+    vendor/xiaomi/dada/proprietary/vendor/etc/media_profiles_sun.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_sun.xml \
     vendor/xiaomi/dada/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
     vendor/xiaomi/dada/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
-    vendor/xiaomi/dada/proprietary/vendor/etc/media_profiles_sun.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_sun.xml \
     vendor/xiaomi/dada/proprietary/vendor/etc/vibrator/effect_0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_0.bin \
     vendor/xiaomi/dada/proprietary/vendor/etc/vibrator/effect_1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_1.bin \
     vendor/xiaomi/dada/proprietary/vendor/etc/vibrator/effect_2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_2.bin \
@@ -1813,6 +1814,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.metadata-V2-ndk_prebuilt \
     android.hardware.camera.provider-V2-ndk_prebuilt \
     android.hardware.graphics.common-V5-ndk_prebuilt \
+    prebuilt_android.hardware.sensors-V2-ndk \
     libSEGModel \
     lib_android_keymaster_keymint_utils_prebuilt \
     libcameraobserver \
@@ -1820,6 +1822,8 @@ PRODUCT_PACKAGES += \
     libcppbor_external_prebuilt \
     libcppbor_prebuilt \
     libcppcose_rkp_prebuilt \
+    libdisplayfeature \
+    libdisplayfeatureservice \
     libimage_io_prebuilt \
     libjpegdecoder_prebuilt \
     libjpegencoder_prebuilt \
@@ -1830,10 +1834,14 @@ PRODUCT_PACKAGES += \
     libopencv_core_se \
     libopencv_imgproc \
     libopencv_imgproc_se \
+    prebuilt_libruy \
     libsi \
     libsoft_attestation_cert_prebuilt \
+    prebuilt_libtextclassifier_hash \
+    prebuilt_libtflite \
     libultrahdr_prebuilt \
     vendor.qti.hardware.camera.offlinecamera-V2-ndk_prebuilt \
+    prebuilt_vendor.qti.hardware.display.allocator@3.0 \
     vendor.qti.hardware.fingerprint-V1-ndk \
     vendor.xiaomi.hardware.aek-V1-ndk \
     vendor.xiaomi.hardware.aon-V1-ndk \
@@ -1842,6 +1850,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.camera.injection-service \
     vendor.xiaomi.hardware.camera.synthetic-V1-ndk \
     vendor.xiaomi.hardware.camera.synthetic-impl \
+    vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hw.touchfeature-V1-ndk \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
@@ -2127,6 +2136,7 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.qti.chi.offline \
     com.qti.chi.override \
+    displayfeature.default \
     fingerprint.goodix_us.default \
     fingerprint.qcom_us.default \
     immunesystem.db.sqlite3 \
@@ -2139,6 +2149,7 @@ PRODUCT_PACKAGES += \
     libIMTCppAlgos \
     libITT \
     libIntelligentFocus \
+    libMiDispDevManager \
     libMiEmojiEffect \
     libMiMotion \
     libMiPhotoFilter \
@@ -2156,6 +2167,7 @@ PRODUCT_PACKAGES += \
     libSnpeHtpPrepare \
     libSnpeHtpV79Stub \
     libTrueSight \
+    libadaptivehdr \
     libaidenoiser \
     libailab_rawhdr \
     libanc_edof \
@@ -2172,6 +2184,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_turbo_hdr_detection \
     libarcsoft_turbo_hdr_grf \
     libarcsoft_turbo_hdr_raw_portrait \
+    libbarrage \
     libbitmlengine \
     libbitmlenginev2 \
     libc++_shared \
@@ -2203,6 +2216,7 @@ PRODUCT_PACKAGES += \
     libchinodeevautils \
     libchinodehmeutils \
     libclient2slpi.notifier \
+    libcolortempmode \
     libcom.qti.chinodeutils \
     libcom.xiaomi.attribute \
     libcom.xiaomi.debug \
@@ -2220,11 +2234,20 @@ PRODUCT_PACKAGES += \
     libcom.xiaomi.signaltrigger \
     libcommonchiutils \
     libcrussp \
+    libdisplaycount \
+    libdisplaylog \
+    libdither \
     libdlrmsc_android15 \
+    libdynamicelvss \
     libecdpreproc \
     libecoengine \
     libellv \
+    libeyecare \
     libfastmessage \
+    libfcmintf \
+    libflatmode \
+    libfpsmonitor \
+    libframecapturemanager \
     libfuai_camera_alg \
     libgf_hal \
     libhandgesture.arcsoft \
@@ -2232,6 +2255,7 @@ PRODUCT_PACKAGES += \
     libhdr10plus \
     libhdr_stub \
     libheichal \
+    libhistprocess \
     libhme \
     libhta_hexagon_runtime_snpe \
     libhwliqinterface2 \
@@ -2249,12 +2273,18 @@ PRODUCT_PACKAGES += \
     libmctfengine_stub \
     libmfGhostDetection \
     libmfec \
+    libmi-stc-HW-modulate \
+    libmiBrightness \
+    libmiClstc \
     libmiSAT \
     libmiSATTranslate \
+    libmiSensorCtrl \
     libmiStereoCalibLib_qual \
+    libmiXmlParser \
     libmiZA \
     libmi_aialign_raw \
     libmi_computationalOptics_def \
+    libmi_dspp \
     libmi_hdr_raw \
     libmi_supernight_raw \
     libmiaio_aio_seg \
@@ -2285,6 +2315,7 @@ PRODUCT_PACKAGES += \
     libmicamera_fps_checker \
     libmicamera_hal_core \
     libmicamera_hal_policy \
+    libmieventnodewatch \
     libmiface \
     libminikin.xiaomi \
     libmiocr \
@@ -2310,6 +2341,7 @@ PRODUCT_PACKAGES += \
     libopencv \
     libopencv3a \
     libopestriping \
+    libpaperMode \
     libportrait_repair_qnn \
     libpostprocinfo \
     libproj_qmot_tracker \
@@ -2325,11 +2357,14 @@ PRODUCT_PACKAGES += \
     libremosaiclib_s5kjn1 \
     libremosaiclib_s5kjn5 \
     librfs_warp \
+    librhytheyecare \
+    libsdr2hdr \
     libsfeShiftExtrapolation \
     libshadowhook \
     libsiminputgenutil \
     libsimulation \
     libsnpe_config \
+    libsre \
     libsupermoon \
     libswregistrationalgo \
     libteecli \
@@ -2338,8 +2373,10 @@ PRODUCT_PACKAGES += \
     libtouchreport_alg \
     libtouchreport_hal \
     libtouchreport_sensor \
+    libtruetone \
     libvega_common \
     libvideoml \
+    libvideomode \
     libwa_widelens_undistort \
     libxmi_slow_motion_mein \
     mi_weaver \
@@ -2356,6 +2393,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.aidlbgservice-V1-ndk \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
     vendor.xiaomi.hardware.bgservice@1.0 \
+    vendor.xiaomi.hardware.framecapturemanager-V1-ndk \
     odm_lib_rfsa_adsp_libCalculator_skel_so \
     odm_lib_rfsa_adsp_libQnnHtpV79_so \
     odm_lib_rfsa_adsp_libQnnHtpV79Skel_so \
@@ -2380,6 +2418,7 @@ PRODUCT_PACKAGES += \
     odm_lib_rfsa_adsp_libmialgo_tracker_cdsp_skel_so \
     odm_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
     MiuiCamera \
+    vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     vendor.xiaomi.hardware.dynamiccameraserver.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
     android.hardware.biometrics.face-v4.xml \
@@ -2393,6 +2432,8 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hw.touchfeature-service.xml \
     vendor.xiaomi.sensor.citsensorservice.aidl.xml \
     batterysecret \
+    displayfeature \
+    vendor.xiaomi.hardware.displayfeature_aidl-service \
     mi_thermald \
     android.hardware.security.keymint-service.strongbox-thales \
     android.hardware.weaver-service.thales \
